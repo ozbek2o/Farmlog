@@ -1,8 +1,11 @@
+import Carousel from '@/components/Carousel'
 import React from 'react'
 
 const index = () => {
   return (
-    <div className='font-dancing text-center text-3xl'></div>
+    <div className='relative'>
+      <Carousel/>
+    </div>
   )
 }
 
