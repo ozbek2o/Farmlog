@@ -1,10 +1,14 @@
+import Campaings from '@/components/Campaings'
 import Carousel from '@/components/Carousel'
+import MenuWrapper from '@/components/product/MenuWrapper'
 import React from 'react'
 
 const index = () => {
   return (
-    <div className='relative'>
+    <div>
       <Carousel/>
+      <Campaings/>
+      <MenuWrapper/>
     </div>
   )
 }

@@ -11,7 +11,7 @@ const Carousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows:false,
-    autoplay:true,
+    autoplay:true, 
     autoplaySpeed:3500,
     appenDots:(dots)=>(
       <div style={{
