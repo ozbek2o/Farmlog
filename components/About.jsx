@@ -10,7 +10,7 @@ const About = () => {
                 <Image src="/images/f5.png" alt='' layout='fill' />
             </div>
             <div className='md:w-1/2 flex-col items-center '> 
-                <Title addClass="text-[40px]">We Are Feane</Title>
+                <Title addClass="text-[40px]">We Are Farmlog</Title>
                 <p className='my-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugit ad inventore iure a facilis! Dolorum debitis expedita odio aspernatur nam praesentium voluptates eius optio reiciendis voluptatem odit, assumenda iste? Necessitatibus minus delectus, sapiente adipisci alias vitae possimus debitis, ex in, nihil dolores perspiciatis. Dolorum sed neque nemo eos suscipit.</p>
                 <button className='btn-primary'>Read More</button>
             </div>
