@@ -1,6 +1,7 @@
 import Header from '../components/layout/Header';
 import Head from 'next/head';
 import Home from "./home";
+import Input from '../components/form/input';
 
 export default function Index() {
   return (
@@ -19,6 +20,7 @@ export default function Index() {
       </Head>
       <Header/>
       <Home/>
+      <Input/>
     </div>
   )
 }
