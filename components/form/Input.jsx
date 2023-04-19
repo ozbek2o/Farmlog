@@ -5,7 +5,7 @@ const Input = () => {
     <div className='w-full'>
          <label className='relative block'>
             <input type="text" className='h-14 w-full border-primary outline-none'/>
-            <span>E-mail</span>
+            <span>Email</span>
          </label>
     </div>
   );
