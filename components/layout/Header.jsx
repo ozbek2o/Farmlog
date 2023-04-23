@@ -29,7 +29,7 @@
                     <a href="">Hakkında</a>
                 </li>
                 <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-                    <a href="">Lıste</a>
+                    <a href="">menü</a>
                 </li>
               </ul>
               {isMenuModal && (
