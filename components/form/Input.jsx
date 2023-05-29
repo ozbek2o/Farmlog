@@ -10,6 +10,7 @@ const Input = () => {
             h-full peer-focus:h-7 peer-focus:text-xs peer-valid:h-7 peer-valid:text-xs transition-all'>E-maiil</span>
          </label>
     </div>
+    
   );
 };
 
