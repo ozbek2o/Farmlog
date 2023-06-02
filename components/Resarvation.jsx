@@ -11,6 +11,8 @@ const Resarvation = () => {
         <Input/>
     </div>
     <div></div>
+    <div></div>
+    <div></div>
     </div>
   )
 }
