@@ -10,6 +10,7 @@ const Input = (props) => {
             <span className='absolute top-0 left-0 px-4 text-sm flex 
             h-full peer-focus:h-7 peer-focus:text-xs peer-valid:h-7 peer-valid:text-xs transition-all'>{placeholder}</span>
          </label>
+         <div></div>
     </div>
     
   );
