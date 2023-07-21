@@ -4,8 +4,12 @@ import Input from './form/Input'
 import { useFormik } from 'formik';
 const Resarvation = () => {
 
+     const onSubmit=async (values,actions)=>{
+      await new Promise((resolve)=>settimeout(resolve,4000));
+      actions.resetForm();
+     };
   
-    const formik = useFormik({
+    const {values,handleSubmit,handleChange}= useFormik({
       initialValues: {
         fullName: "",
        phoneNumber: "",
@@ -13,6 +17,8 @@ const Resarvation = () => {
         persons:"",
         date:"",
       },
+      onSubmit,
+      
     });
 
     const inputs =[
@@ -21,7 +27,7 @@ const Resarvation = () => {
             name:"fullName",
             typr:"text",
             placeholder:"Your Full Name",
-            value: formik.values.fullName,
+            value: values.fullName,
 
         },
         {
@@ -29,27 +35,29 @@ const Resarvation = () => {
             name:"phoneNumber",
             type:"text",
             placeholder:"Your phone Name",
-            
+            value: values.phoneNumber,
         },
         {
             id:3,
             name:"email",
             type:"text",
             placeholder:"Email addres",
-            
-        },
-        {
-            id:3,
-            name:"persons",
-            type:"number",
-            placeholder:"how money person",
+            value: values.email,
             
         },
         {
             id:4,
             name:"persons",
-            type:"date",
+            type:"number",
             placeholder:"how money person",
+            value: values.persons,
+            
+        },
+        {
+            id:5,
+            name:"date",
+            type:"datetime-local",
+            value: values.date,
             
         },
     ];
@@ -58,10 +66,10 @@ const Resarvation = () => {
     <div className='container mx-auto py-12 '> 
     <Title addClass="text-[40px] mb-10">Book A Table</Title> 
     <div className='flex justify-between flex-wrap items-center gap-x-10'>
-       <form className='lg:flex-1 w-full' onSubmit={formik.handleSubmit}>
+       <form className='lg:flex-1 w-full' onSubmit={handleSubmit}>
     <div className='flex flex-col gap-y-4'>
       {inputs.map((input)=>(
-        <input key={input.id} {...input} onChange={formik.handleChange}/>
+        <input key={input.id} {...input} onChange={handleChange}/>
       ))}
         </div>
         <button className="btn-primary mt-4">BOOK NOW</button>
