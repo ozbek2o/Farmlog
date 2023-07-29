@@ -2,6 +2,7 @@ import React from 'react'
 import Title from './ui/Title'
 import Input from './form/Input'
 import { useFormik } from 'formik';
+import { reservationSchema } from './schema/reservation';
 const Resarvation = () => {
 
      const onSubmit=async (values,actions)=>{
@@ -18,7 +19,8 @@ const Resarvation = () => {
         date:"",
       },
       onSubmit,
-      
+      validationSchema:reservationSchema,
+        
     });
 
     const inputs =[
